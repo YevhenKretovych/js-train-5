@@ -181,10 +181,10 @@ function getEvenNumbers(arr) {
   // Перевіряємо чи є число парним
   // Якщо так, додаємо його до масиву результату
   // Повертаємо масив результату
-  let arr2 = Array();
+  let arr2 = [];
   for (const index in arr) {
     if (arr[index] % 2 === 0) {
-      arr2 += arr[index];
+      arr2 = [...arr2, arr[index]];
     }
   }
   return arr2;
